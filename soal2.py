@@ -7,9 +7,9 @@ pesanan_pelanggan = {
     }
 }
 
-pesanan_pelanggan["meja_1"]["jumlah"] += 1
-total_tagihan = pesanan_pelanggan["meja_1"]["harga_satuan"] * pesanan_pelanggan["meja_1"]["jumlah"]
-pesanan_pelanggan["meja_1"]["total_tagihan"] = total_tagihan
+pesanan_pelanggan["meja_1"]["jumlah"] + 1
+total_tagihan = pesanan_pelanggan["meja_1"]["harga_satuan"] 
+pesanan_pelanggan["meja_1"]["total_tagihan"] 
 
 print("=== Data Meja 1 Setelah Penambahan Pesanan ===")
 print(f"Nama Pelanggan   : {pesanan_pelanggan['meja_1']["nama"]}")
@@ -26,7 +26,6 @@ jumlah = int(input("Masukkan Jumlah: "))
 total_tagihan2 = harga_satuan * jumlah
 
 print("\n=== Sisa Pesanan Setelah Meja 1 Pulang ===")
-pesanan_pelanggan.pop("meja_1")
 
 pesanan_pelanggan["meja_2"] = {
     "nama" : nama,
